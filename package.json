@@ -2,10 +2,6 @@
   "name": "redux-saga-base",
   "version": "1.0.0",
   "description": "",
-  "engines": {
-    "node": "10.20.1",
-    "npm": "6.14.4"
-  },
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
@@ -30,7 +26,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

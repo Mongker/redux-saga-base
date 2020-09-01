@@ -1,7 +1,7 @@
 import { UP, DOWN } from "./actionTypes";
 
-// Action tăng giá trị
-export const actionUp = step => {
+// Action tÄng giÃ¡ trá»
+export const actionUp = (step) => {
   debugger; // Todo by MongLV
   return {
     type: UP,
@@ -9,8 +9,8 @@ export const actionUp = step => {
   };
 };
 
-// Action giảm giá trị
-export const actionDown = step => {
+// Action giáº£m giÃ¡ trá»
+export const actionDown = (step) => {
   return {
     type: DOWN,
     step: step
