@@ -2,6 +2,7 @@ import { UP, DOWN } from "./actionTypes";
 
 // Action tăng giá trị
 export const actionUp = step => {
+  debugger; // Todo by MongLV
   return {
     type: UP,
     step: step

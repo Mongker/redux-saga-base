@@ -1,19 +1,19 @@
 import React, { Component, PropTypes } from "react";
-import "../styles.css";
+import "../../styles.css";
 // style
 import { Button } from "antd";
 
-class Main extends Component {
+class UpDownClass extends Component {
   constructor(props) {
     super(props);
   }
 
   render() {
-    // const {  } = this.state;
     const { onUp, onDown, times } = this.props;
     return (
       <div className="App">
-        <h1>Totals: {times}</h1>
+        <h3>Sử dụng React Class Component</h3>
+        <h3>Totals: {times}</h3>
         <Button type="primary" onClick={() => onUp(1)}>
           Tăng (+)
         </Button>
@@ -25,4 +25,4 @@ class Main extends Component {
   }
 }
 
-export default Main;
+export default UpDownClass;

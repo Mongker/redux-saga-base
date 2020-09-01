@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Main from "./components/Main";
-
 // UI ANT DESIGN
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 
@@ -14,15 +12,19 @@ import { Provider } from "react-redux";
 import createSagaMiddleware from "redux-saga";
 import rootSaga from "./sagas/rootSaga";
 
+// components
+import App from "./App";
+
 // Reducers
 import allReducers from "./reducers";
-import MainContainer from "./components/MainContainer";
+import UpDownContainer from "./components/UpDownClass";
 
 // Middleware
 const sagaMiddleware = createSagaMiddleware();
 
 // Store
 let store = createStore(allReducers, applyMiddleware(sagaMiddleware));
+debugger; // Todo by MongLV
 
 sagaMiddleware.run(rootSaga);
 
@@ -30,7 +32,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <MainContainer />
+        <App />
     </Provider>
   </React.StrictMode>,
   rootElement
