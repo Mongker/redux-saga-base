@@ -13,7 +13,7 @@ class Main extends Component {
     const { onUp, onDown, times } = this.props;
     return (
       <div className="App">
-        <h1>Giá trị: {times}</h1>
+        <h1>Totals: {times}</h1>
         <Button type="primary" onClick={() => onUp(1)}>
           Tăng (+)
         </Button>
